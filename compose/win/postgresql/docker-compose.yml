@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+    run:
+        container_name: postgresql
+        environment:
+            - POSTGRES_USER=mihaj
+            - POSTGRES_PASSWORD=Mihaj666.
+        volumes:
+            - 'c:/Apps/DockerVolumes/postgresql:/var/lib/postgresql/data'
+        ports:
+            - '5432:5432'
+        image: postgres:latest

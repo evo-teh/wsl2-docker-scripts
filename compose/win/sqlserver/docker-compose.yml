@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+    run:
+        container_name: sqlserver
+        environment:
+            - ACCEPT_EULA=Y
+            - MSSQL_PID=EXPRESS
+            - SA_PASSWORD=Mihaj666.
+        volumes:
+            - 'c:/Apps/DockerVolumes/sqlserver:/var/opt/mssql/data'
+        ports:
+            - '1433:1433'
+        image: mcr.microsoft.com/mssql/server:latest

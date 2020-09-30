@@ -1,0 +1,1 @@
+docker-compose -f "../../compose/win/nginx/docker-compose.yml" up

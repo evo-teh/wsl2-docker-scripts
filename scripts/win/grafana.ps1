@@ -1,0 +1,1 @@
+docker-compose -f "../../compose/win/grafana/docker-compose.yml" up

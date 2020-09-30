@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+    run:
+        container_name: memcached
+        ports:
+            - '11211:11211'
+        image: memcached:latest

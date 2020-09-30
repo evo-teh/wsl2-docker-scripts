@@ -1,0 +1,1 @@
+docker-compose -f "../../compose/win/memcached/docker-compose.yml" up

@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+    run:
+        container_name: mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=Mihaj666.
+            - MYSQL_USER=mihaj
+            - MYSQL_PASS=mihaj
+        volumes:
+            - 'c:/Apps/DockerVolumes/mysql:/var/lib/mysql'
+        ports:
+            - '3306:3306'
+        image: mysql:latest

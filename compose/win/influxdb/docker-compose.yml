@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    run:
+        container_name: influxdb
+        volumes:
+            - 'c:/Apps/DockerVolumes/influxdb:/var/lib/influxdb'
+        ports:
+            - '8086:8086'
+        image: influxdb:latest

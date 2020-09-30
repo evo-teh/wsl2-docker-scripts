@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    run:
+        container_name: nginx
+        volumes:
+            - 'c:/Apps/DockerVolumes/nginx:/etc/nginx'
+        ports:
+            - '8080:80'
+        image: nginx:latest

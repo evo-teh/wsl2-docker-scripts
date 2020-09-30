@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+    rabbitmq:
+        container_name: rabbit
+        volumes:
+            - 'c:/Apps/DockerVolumes/rabbitmq:/var/lib/rabbitmq'
+        ports:
+            - '5672:5672'
+            - '15672:15672'
+        image: 'rabbitmq:management'

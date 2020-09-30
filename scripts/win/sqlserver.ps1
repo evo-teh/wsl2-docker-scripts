@@ -1,0 +1,1 @@
+docker-compose -f "../../compose/win/sqlserver/docker-compose.yml" up

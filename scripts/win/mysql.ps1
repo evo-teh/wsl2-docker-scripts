@@ -1,0 +1,1 @@
+docker-compose -f "../../compose/win/mysql/docker-compose.yml" up
