@@ -1,1 +1,1 @@
-docker-compose -f "../../compose/win/influxdb/docker-compose.yml" up
+docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/influxdb/docker-compose.yml" up

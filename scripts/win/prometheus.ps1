@@ -1,1 +1,1 @@
-docker-compose -f "../../compose/win/prometheus/docker-compose.yml" up
+docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/prometheus/docker-compose.yml" up

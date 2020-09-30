@@ -1,1 +1,1 @@
-docker-compose -f "../../compose/win/memcached/docker-compose.yml" up
+docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/memcached/docker-compose.yml" up
