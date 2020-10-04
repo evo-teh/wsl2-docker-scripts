@@ -1,9 +1,9 @@
 version: '3.8'
 services:
     run:
-        container_name: prometheus
+        container_name: ${containerName}
         volumes:
-            - 'c:/Apps/DockerVolumes/prometheus:/etc/prometheus'
+            - '${volumePath}:/etc/prometheus'
         ports:
-            - '9090:9090'
-        image: prom/prometheus
+            - '${hostPort}:9090'
+        image: ${image}

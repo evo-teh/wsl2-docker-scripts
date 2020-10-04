@@ -1,1 +1,1 @@
-docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/mysql/docker-compose.yml" up
+docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/mysql/docker-compose.yml" --env-file "$(Split-Path -Parent $PSCommandPath)/mysql.env.dev" up

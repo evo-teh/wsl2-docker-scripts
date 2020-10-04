@@ -1,7 +1,7 @@
 version: '3.8'
 services:
     run:
-        container_name: memcached
+        container_name: ${containerName}
         ports:
-            - '11211:11211'
-        image: memcached:latest
+            - '${hostPort}:11211'
+        image: ${image}

@@ -1,1 +1,1 @@
-docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/postgresql/docker-compose.yml" up
+docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/postgresql/docker-compose.yml" --env-file "$(Split-Path -Parent $PSCommandPath)/postgresql.env.dev" up

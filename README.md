@@ -5,7 +5,7 @@ Useful scripts for running docker containers in WSL2 under Windows 10. Avoid ins
 
 `/compose/win/*` folder contains docker compose files with hardcoded mount volumes. If folder for volumes does not exist it will be created automatically.
 
-`/scripts/win/*` folder contains scripts to run docker compose. Every program is seperated. You can add this folder to Environment variables and run them from command line.
+`/scripts/win/*` folder contains scripts to run docker compose. Every program is separated. You can add this folder to Environment variables and run them from command line.
 
 ## Helper scripts
 

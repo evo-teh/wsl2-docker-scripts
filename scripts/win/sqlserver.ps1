@@ -1,1 +1,1 @@
-docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/sqlserver/docker-compose.yml" up
+docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/sqlserver/docker-compose.yml" --env-file "$(Split-Path -Parent $PSCommandPath)/sqlserver.env.dev" up

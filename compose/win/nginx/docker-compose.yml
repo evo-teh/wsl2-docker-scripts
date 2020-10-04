@@ -1,9 +1,9 @@
 version: '3.8'
 services:
     run:
-        container_name: nginx
+        container_name: ${containerName}
         volumes:
-            - 'c:/Apps/DockerVolumes/nginx:/etc/nginx'
+            - '${volumePath}:/etc/nginx'
         ports:
-            - '8080:80'
-        image: nginx:latest
+            - '${hostPort}:80'
+        image: ${image}

@@ -1,1 +1,1 @@
-docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/rabbitmq/docker-compose.yml" up
+docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/rabbitmq/docker-compose.yml" --env-file "$(Split-Path -Parent $PSCommandPath)/rabbitmq.env.dev" up

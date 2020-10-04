@@ -1,9 +1,9 @@
 version: '3.8'
 services:
     run:
-        container_name: grafana
+        container_name: ${containerName}
         volumes:
-            - 'c:/Apps/DockerVolumes/grafana:/var/lib/grafana'
+            - '${volumePath}:/var/lib/grafana'
         ports:
-            - '3000:3000'
-        image: grafana/grafana:latest
+            - '${hostPort}:3000'
+        image: ${image}

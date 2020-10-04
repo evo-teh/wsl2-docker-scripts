@@ -1,10 +1,11 @@
 version: '3.8'
 services:
     rabbitmq:
-        container_name: rabbit
+        container_name: ${containerName}
         volumes:
-            - 'c:/Apps/DockerVolumes/rabbitmq:/var/lib/rabbitmq'
+            - '${volumePath}:/var/lib/rabbitmq'
         ports:
-            - '5672:5672'
-            - '15672:15672'
-        image: 'rabbitmq:management'
+            - '${hostPort}:5672'
+            - '${uiPort}:15672'
+            - '${prometheusPort}:25672'
+        image: ${image}

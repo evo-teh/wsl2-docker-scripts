@@ -1,12 +1,12 @@
 version: '3.8'
 services:
     run:
-        container_name: postgresql
+        container_name: ${containerName}
         environment:
-            - POSTGRES_USER=mihaj
-            - POSTGRES_PASSWORD=Mihaj666.
+            - POSTGRES_USER=${user}
+            - POSTGRES_PASSWORD=${pass}
         volumes:
-            - 'c:/Apps/DockerVolumes/postgresql:/var/lib/postgresql/data'
+            - '${volumePath}:/var/lib/postgresql/data'
         ports:
-            - '5432:5432'
-        image: postgres:latest
+            - '${hostPort}:5432'
+        image: ${image}
