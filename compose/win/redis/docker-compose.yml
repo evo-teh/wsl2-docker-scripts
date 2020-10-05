@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    rabbitmq:
+        container_name: ${containerName}
+        volumes:
+            - '${volumePath}:/data'
+        ports:
+            - '${hostPort}:6379'
+        image: ${image}

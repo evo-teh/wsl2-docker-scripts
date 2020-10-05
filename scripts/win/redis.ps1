@@ -1,0 +1,1 @@
+docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/redis/docker-compose.yml" --env-file "$(Split-Path -Parent $PSCommandPath)/redis.env.dev" up
