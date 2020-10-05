@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+    run:
+        container_name: ${containerName}
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=${user}
+            - MONGO_INITDB_ROOT_PASSWORD=${pass}
+        volumes:
+            - '${volumePath}:/data/db'
+        ports:
+            - '${hostPort}:27017'
+        image: ${image}

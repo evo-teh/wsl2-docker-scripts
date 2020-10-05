@@ -1,0 +1,1 @@
+docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/mongodb/docker-compose.yml" --env-file "$(Split-Path -Parent $PSCommandPath)/mongodb.env.dev" up
