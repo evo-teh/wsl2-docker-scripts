@@ -1,0 +1,1 @@
+docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/jekyll/docker-compose.yml" --env-file "$(Split-Path -Parent $PSCommandPath)/jekyll.env.dev" up

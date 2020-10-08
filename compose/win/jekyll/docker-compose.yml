@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+    run:
+        container_name: ${containerName}
+        volumes:
+            - '${volumePath}:/srv/jekyll'
+        ports:
+            - '${hostPort}:4000'
+        image: ${image}
+        command: jekyll serve
+        stdin_open: true
+        tty: true
