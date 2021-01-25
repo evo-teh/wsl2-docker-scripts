@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+    run:
+        container_name: ${containerName}
+        environment:
+            - discovery.type=single-node
+        volumes:
+            - '${volumePath}:/usr/share/elasticsearch/data'
+        ports:
+            - '${hostPort}:9200'
+            - '9300:9300'
+        image: ${image}

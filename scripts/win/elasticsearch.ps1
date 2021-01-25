@@ -1,0 +1,1 @@
+docker-compose -f "$(Split-Path -Parent $PSCommandPath)/../../compose/win/elasticsearch/docker-compose.yml" --env-file "$(Split-Path -Parent $PSCommandPath)/elasticsearch.env.dev" up
