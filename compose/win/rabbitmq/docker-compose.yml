@@ -4,8 +4,10 @@ services:
         container_name: ${containerName}
         volumes:
             - '${volumePath}:/var/lib/rabbitmq'
+            - '${configPath}:/etc/rabbitmq'
         ports:
             - '${hostPort}:5672'
+            - '${sslPort}:5671'
             - '${uiPort}:15672'
             - '${prometheusPort}:25672'
         image: ${image}
